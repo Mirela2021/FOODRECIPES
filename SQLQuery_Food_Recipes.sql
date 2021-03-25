@@ -424,3 +424,6 @@ FOREIGN KEY (IDRETETA)
 REFERENCES ListaRetete (idReteta);
 
 select* from ReteteProduse where IDProdus not in (select IDprodus from ListaProduse);
+
+use FOODRECIPES;
+select * from ViewRetete where DenumireProdus='piper';
